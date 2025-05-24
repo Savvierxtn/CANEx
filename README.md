@@ -7,7 +7,7 @@ This project analyzes the relationship between surface temperature and PM2.5 con
 
 ## 📁 Data Sources
 
-- **Temperature (2m)**: ERA5 reanalysis data (NetCDF format)
+- **Temperature (2m)**: ERA5 reanalysis data (netCDF4 format)
 - **Air Quality (PM2.5)**: OpenAQ measurements (CSV)
 
 ---
@@ -17,7 +17,7 @@ This project analyzes the relationship between surface temperature and PM2.5 con
 Ensure the following Python libraries are installed:
 
 ```bash
-pip install xarray netCDF4 pandas matplotlib seaborn scipy
+!pip install xarray netCDF4 pandas matplotlib seaborn scipy
 ```
 
 Or install them via Anaconda:
@@ -134,8 +134,7 @@ Correlation is easier to interpret:
 This analysis was performed interactively using extract from CAN fellowship class, open sources and Python libraries.
 
 
-
-between PM2.5 and temperature.
+etween PM2.5 and temperature.
 
 
 corr = merged_df_clean[['temperature_celsius', 'pm25']].corr()
