@@ -132,18 +132,3 @@ Correlation is easier to interpret:
 ## 👨‍🔬 Author
 
 This analysis was performed interactively using extract from CAN fellowship class, open sources and Python libraries.
-
-
-etween PM2.5 and temperature.
-
-
-corr = merged_df_clean[['temperature_celsius', 'pm25']].corr()
-
-# Plot
-sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=".2f")
-plt.title("Correlation Heatmap")
-plt.show()
-```
-
-This plot helps visualize the strength and direction of the linear relationship between PM2.5 and temperature.
-
